@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JQuery Introductie Selectors</title>
+	<title>jQuery basis pagina</title>
+	
+
 	<!-- voeg css toe -->
 
 	<style type="text/css">
@@ -13,7 +15,7 @@
 			line-height: 1.5em;
 		}
 
-		header{
+		#header{
 			background: #918a8a;
 			color: #fff;
 			padding: 20px;
@@ -35,16 +37,26 @@
 
 
 	</style>
-	<script>
-	src="https://code.jquery.com/jquery-3.4.0.js"
+
+	<!-- voeg CDN jQuery toe -->
+	<script
+  		src="https://code.jquery.com/jquery-3.4.0.js"
   		integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
   		crossorigin="anonymous">
-	</script>
+  	</script>
+
+  	<!-- voeg CDN jQuery mobile toe  -->
+  		<link rel="stylesheet" href="http://code.jquery.com mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  	
+  	
+
 </head>
 <body>
 	<!-- maak een basis html pagina met css -->
 	<div id = "header">
-	<h1>Les 1: jQuery selectors</h1>
+	<h1>jQuery</h1>
 	</div>
 
 
@@ -90,12 +102,16 @@
 
 		</div>
 
-
-
-		
-
-
 	</div>
 
+
+
 </body>
+
+	<script>
+		// verbergt alle paragrafen. Tijd in milliseconden
+	$("#p1 , #p2").hide(10000);
+ 
+
+	</script>
 </html>
